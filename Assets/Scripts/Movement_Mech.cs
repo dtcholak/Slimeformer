@@ -9,7 +9,7 @@ public class Movement_Mech : MonoBehaviour
     private Collision_Mech coll;
     [HideInInspector]
     public Rigidbody2D rb;
-    //private AnimationScript anim;
+    private AnimationScript anim;
     private Player_Input control;
 
 
@@ -38,6 +38,7 @@ public class Movement_Mech : MonoBehaviour
     public bool isDashing; //boolean player is Dashing
     public bool flying; //boolean player is flying (dashing while not grounded)
     public bool dashed; //boolean player has dashed
+    public bool noleggies = true; //boolean player just got leggies
     public int side = 1; //1 is right, -1 left 
 
     [Space]
@@ -59,10 +60,13 @@ public class Movement_Mech : MonoBehaviour
     {
         coll = GetComponent<Collision_Mech>();
         rb = GetComponent<Rigidbody2D>();
-        //anim = GetComponentInChildren<AnimationScript>();
+        anim = GetComponentInChildren<AnimationScript>();
         control = GetComponent<Player_Input>();
 
+
+
         //Jump calculations for gravity
+        
         initialJumpVelocity_max = 2 * MaxJumpHeight / TimetoJumpApex; //calculation for initial jump hold velocity (based on max height and time to apex)
         
         upGravity_max = -2 * MaxJumpHeight / Mathf.Pow(TimetoJumpApex, 2.0f); //upward gravity for hold jump button calculated to apex of jump based on 0 velocity at apex and set time to apex  
@@ -89,9 +93,15 @@ public class Movement_Mech : MonoBehaviour
         Vector2 dash_dir = control.dash_dir;
         float dash_x = dash_dir.x;
         float dash_y = dash_dir.y;
+        if (coll.hasleggies && noleggies)
+        {
+            anim.SetTrigger("hasleggies"); //use sprites with leggies from now on
+            noleggies = false;
 
+        }
         
-        //anim.SetHorizontalMovement(x, y, rb.velocity.y); //animation for x direction movement based on x, y, current rigid body y velocity
+        anim.SetHorizontalMovement(x, y, rb.velocity.y); //animation for x direction movement based on x, y, current rigid body y velocity
+
         if (!flying)
         {
             //wings.SetActive(false);
@@ -149,7 +159,7 @@ public class Movement_Mech : MonoBehaviour
         }
         Walk(dir);
         
-        if (Input.GetButtonDown("Jump") && coll.onGround && !jumped) //if jump pressed, and touching ground, and haven't recently jumped
+        if (Input.GetButtonDown("Jump") && coll.onGround && !jumped && coll.hasleggies) //if jump pressed, and touching ground, and haven't recently jumped
         {
             Jump(initialJumpVelocity_max); //jump at the speed of initial jump velocity max
             //anim.SetTrigger("jump"); //set jump trigger to active in animation script
@@ -215,12 +225,12 @@ public class Movement_Mech : MonoBehaviour
         if(x > 0) //if input x right 
         {
             side = 1; //set side to right 
-            //anim.Flip(side); //correcting animation side 
+            anim.Flip(side); //correcting animation side 
         }
         if (x < 0) //if input x left
         {
             side = -1; //set side to left
-            //anim.Flip(side); //corecting animation side
+            anim.Flip(side); //corecting animation side
         }
 
 

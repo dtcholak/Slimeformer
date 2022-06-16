@@ -17,13 +17,14 @@ public class Collision_Mech : MonoBehaviour
     public bool onRightWall;
     public bool onLeftWall;
     public bool onCeiling;
+    public bool hasleggies;
     public int wallSide;
 
     [Space]
 
     [Header("Collision")]
     public BoxCollider2D m_Collider;
-    [SerializeField] public float distance = 0.25f;
+    [SerializeField] public float distance = 0.1f;
 /*
     [SerializeField] public float bottomHeight = 0.25f;
     [SerializeField] public float topHeight = 0.25f;
@@ -43,6 +44,7 @@ public class Collision_Mech : MonoBehaviour
         leftSize = new Vector2(distance, m_Collider.size.y);
         rightSize = new Vector2(distance, m_Collider.size.y);
         topSize = new Vector2(m_Collider.size.x, distance);
+        hasleggies = false; 
 
         
     }
@@ -102,6 +104,16 @@ public class Collision_Mech : MonoBehaviour
         */
 
         wallSide = onRightWall ? -1 : 1; 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Powerup")
+        {
+            hasleggies = true; //allows jumping in movement script
+            //Debug.Log("got leggies"); //what happens when colliding with powerup
+        }
+
     }
 
     void OnDrawGizmos()

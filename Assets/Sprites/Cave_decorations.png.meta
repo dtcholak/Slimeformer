@@ -1,55 +1,37 @@
 fileFormatVersion: 2
-guid: b4015465aa2d4a04eae0cffb496bb913
+guid: a29c4aaca5b4af14e8ef2a64200d72ce
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3411806688270126385
-    second: Legs_Slime-Sheet_0
+      213: -5754105872773228461
+    second: Cave_decorations_0
   - first:
-      213: -7585104638076703496
-    second: Legs_Slime-Sheet_1
+      213: -2244708013635617644
+    second: Cave_decorations_1
   - first:
-      213: -5348323949214632117
-    second: Legs_Slime-Sheet_2
+      213: 5522415821646760009
+    second: Cave_decorations_2
   - first:
-      213: 950123280236513335
-    second: Legs_Slime-Sheet_3
+      213: 5147370528749489143
+    second: Cave_decorations_3
   - first:
-      213: 3567433014524829344
-    second: Legs_Slime-Sheet_4
+      213: 4424802398878447822
+    second: Cave_decorations_4
   - first:
-      213: 6437729914698809402
-    second: Legs_Slime-Sheet_5
+      213: -5747746532342175008
+    second: Cave_decorations_5
   - first:
-      213: 5667316455800061892
-    second: Legs_Slime-Sheet_6
+      213: -6600495354307158302
+    second: Cave_decorations_6
   - first:
-      213: 4370690782398367671
-    second: Legs_Slime-Sheet_7
+      213: -5830649553901689948
+    second: Cave_decorations_7
   - first:
-      213: 2696702579545050409
-    second: Legs_Slime-Sheet_8
+      213: -7303227980412297319
+    second: Cave_decorations_8
   - first:
-      213: -3557225237603713873
-    second: Legs_Slime-Sheet_9
-  - first:
-      213: 3461761123483441196
-    second: Legs_Slime-Sheet_10
-  - first:
-      213: 8444127432411347239
-    second: Legs_Slime-Sheet_11
-  - first:
-      213: 3928780163982690122
-    second: Legs_Slime-Sheet_12
-  - first:
-      213: 2532902084783668733
-    second: Legs_Slime-Sheet_13
-  - first:
-      213: -6422508859097947177
-    second: Legs_Slime-Sheet_14
-  - first:
-      213: 719726611766761929
-    second: Legs_Slime-Sheet_15
+      213: 4147951710781481269
+    second: Cave_decorations_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,97 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13d84a04b1c295f20800000000000000
-      internalID: 3411806688270126385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fc254fe48b4cb690800000000000000
-      internalID: -7585104638076703496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b47f85f64bfe6c5b0800000000000000
-      internalID: -5348323949214632117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7388353e6148f2d00800000000000000
-      internalID: 950123280236513335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_4
+      name: Cave_decorations_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0aed0c6fc61128130800000000000000
-      internalID: 3567433014524829344
+      spriteID: 358dc5df13f4520b0800000000000000
+      internalID: -5754105872773228461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_5
+      name: Cave_decorations_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 64
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a304785bf39675950800000000000000
-      internalID: 6437729914698809402
+      spriteID: 49cb6ce54f139d0e0800000000000000
+      internalID: -2244708013635617644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_6
+      name: Cave_decorations_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +189,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cf30b13a4a56ae40800000000000000
-      internalID: 5667316455800061892
+      spriteID: 94880474eef83ac40800000000000000
+      internalID: 5522415821646760009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_7
+      name: Cave_decorations_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +210,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7cde31c10d7ac30800000000000000
-      internalID: 4370690782398367671
+      spriteID: 7fb8d6559322f6740800000000000000
+      internalID: 5147370528749489143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_8
+      name: Cave_decorations_4
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d89a655bc9c6520800000000000000
-      internalID: 2696702579545050409
+      spriteID: ec83272965e086d30800000000000000
+      internalID: 4424802398878447822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_9
+      name: Cave_decorations_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 32
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fac739e4e7232aec0800000000000000
-      internalID: -3557225237603713873
+      spriteID: 0eae2c05bf6eb30b0800000000000000
+      internalID: -5747746532342175008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_10
+      name: Cave_decorations_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +273,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c28dc7e8665aa0030800000000000000
-      internalID: 3461761123483441196
+      spriteID: 2eed7e832745664a0800000000000000
+      internalID: -6600495354307158302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_11
+      name: Cave_decorations_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 729720f29219f2570800000000000000
-      internalID: 8444127432411347239
+      spriteID: 4a366e17f1f551fa0800000000000000
+      internalID: -5830649553901689948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_12
+      name: Cave_decorations_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a470aca5eb4d58630800000000000000
-      internalID: 3928780163982690122
+      spriteID: 99fd4d198d8b5aa90800000000000000
+      internalID: -7303227980412297319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Slime-Sheet_13
+      name: Cave_decorations_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,50 +336,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd7066b60da62320800000000000000
-      internalID: 2532902084783668733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d3eaa6783aaed6a0800000000000000
-      internalID: -6422508859097947177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Slime-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c9d0c54a8bfcf900800000000000000
-      internalID: 719726611766761929
+      spriteID: 531aa9aaa1c709930800000000000000
+      internalID: 4147951710781481269
       vertices: []
       indices: 
       edges: []
