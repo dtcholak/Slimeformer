@@ -651,13 +651,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  maxSpeed: 10
-  acceleration: 10
-  deceleration: 10
-  MaxJumpHeight: 1
-  MinJumpHeight: 0.5
-  TimetoJumpApex: 0.4
-  TimetoJumpDrop: 0.3
+  maxSpeed: 5
+  acceleration: 9
+  deceleration: 9
+  MaxJumpHeight: 1.2
+  MinJumpHeight: 1.2
+  TimetoJumpApex: 0.5
+  TimetoJumpDrop: 0.5
   dashSpeed: 15
   dashdrag: 50
   groundTouch: 0
@@ -666,6 +666,8 @@ MonoBehaviour:
   flying: 0
   dashed: 0
   noleggies: 1
+  jumpWinding: 0
+  hasleggies: {fileID: 3567433014524829344, guid: b4015465aa2d4a04eae0cffb496bb913, type: 3}
   side: 1
 --- !u!114 &1160747044
 MonoBehaviour:

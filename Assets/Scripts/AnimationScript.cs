@@ -22,6 +22,7 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         anim.SetBool("onGround", coll.onGround);
+        
     }
 
     public void SetHorizontalMovement(float x,float y, float yVel)
@@ -35,6 +36,12 @@ public class AnimationScript : MonoBehaviour
     {
         anim.SetTrigger(trigger);
     }
+
+    public void ResetTrigger(string trigger)
+    {
+        anim.ResetTrigger(trigger);
+    }
+    
     public void Flip(int side)
     {
         bool state = (side == 1) ? false : true;

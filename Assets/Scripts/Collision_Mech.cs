@@ -111,6 +111,7 @@ public class Collision_Mech : MonoBehaviour
         if(collision.tag == "Powerup")
         {
             hasleggies = true; //allows jumping in movement script
+            Destroy(collision.gameObject);
             //Debug.Log("got leggies"); //what happens when colliding with powerup
         }
 

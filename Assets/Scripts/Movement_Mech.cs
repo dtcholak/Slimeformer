@@ -11,6 +11,7 @@ public class Movement_Mech : MonoBehaviour
     public Rigidbody2D rb;
     private AnimationScript anim;
     private Player_Input control;
+    private SpriteRenderer sr;
 
 
     [Space]
@@ -39,6 +40,8 @@ public class Movement_Mech : MonoBehaviour
     public bool flying; //boolean player is flying (dashing while not grounded)
     public bool dashed; //boolean player has dashed
     public bool noleggies = true; //boolean player just got leggies
+    public bool jumpWinding;
+    public Sprite hasleggies;
     public int side = 1; //1 is right, -1 left 
 
     [Space]
@@ -61,6 +64,7 @@ public class Movement_Mech : MonoBehaviour
         coll = GetComponent<Collision_Mech>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<AnimationScript>();
+        sr = GetComponentInChildren<SpriteRenderer>();
         control = GetComponent<Player_Input>();
 
 
@@ -96,9 +100,11 @@ public class Movement_Mech : MonoBehaviour
         if (coll.hasleggies && noleggies)
         {
             anim.SetTrigger("hasleggies"); //use sprites with leggies from now on
+            //sr.sprite = hasleggies;
             noleggies = false;
 
         }
+        //Debug.Log(noleggies);
         
         anim.SetHorizontalMovement(x, y, rb.velocity.y); //animation for x direction movement based on x, y, current rigid body y velocity
 
@@ -117,6 +123,7 @@ public class Movement_Mech : MonoBehaviour
         {
             flying = false;
             dashed = false;
+            
         }
         }
         if (flying)
@@ -161,8 +168,9 @@ public class Movement_Mech : MonoBehaviour
         
         if (Input.GetButtonDown("Jump") && coll.onGround && !jumped && coll.hasleggies) //if jump pressed, and touching ground, and haven't recently jumped
         {
-            Jump(initialJumpVelocity_max); //jump at the speed of initial jump velocity max
-            //anim.SetTrigger("jump"); //set jump trigger to active in animation script
+            
+            anim.SetTrigger("jump"); //set jump trigger to active in animation script
+            StartCoroutine(JumpWindup(initialJumpVelocity_max));
         }
         /*
         if (Input.GetButtonUp("Jump")) //if jump released 
@@ -202,6 +210,7 @@ public class Movement_Mech : MonoBehaviour
         if (coll.onGround && !groundTouch) //if touching ground and weren't before (landing)
         {
             GroundTouch();
+            
             groundTouch = true; //set groundtouch to true (animation)
             
         }
@@ -264,6 +273,12 @@ public class Movement_Mech : MonoBehaviour
             speed = 0; // set speed to 0 
             return;
         }
+        if(jumpWinding)
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y); //set x velocity to 0 
+            speed = 0; // set speed to 0 
+            return;
+        }
         if(dir.x != 0 && abs_speed <= 10) //if either right or left input (any x direction input)
         {
         speed += dir.x*acceleration*Time.deltaTime; //increment speed by acceleration constant
@@ -290,9 +305,11 @@ public class Movement_Mech : MonoBehaviour
     private void Jump(float Jump_initialVelocity) //creation of jump initial velocity 
     {
         flying = false;
+        jumpWinding = false;
         rb.velocity = Vector2.right * rb.velocity;
         rb.velocity += Vector2.up * Jump_initialVelocity; //set rigid body velocity to current rb x velocity and y velocity input to function
         jumped = true; //recently jumped
+        anim.ResetTrigger("jump");
         //Debug.Log(Physics2D.gravity);
         //jumpParticle.Play(); //jump particle animation
     }
@@ -320,6 +337,13 @@ public class Movement_Mech : MonoBehaviour
     rb.velocity -= dash_dir.normalized * dashSpeed * (0.75f); //make the velocities of magnitude one and subtract by set dash decay to slow 
     //rb.drag = dashdrag;
     
+    }
+
+    IEnumerator JumpWindup(float initialJumpVelocity_max)
+    {
+        jumpWinding = true;
+        yield return new WaitForSeconds(0.5f);
+        Jump(initialJumpVelocity_max); //jump at the speed of initial jump velocity max
     }
 }
  
