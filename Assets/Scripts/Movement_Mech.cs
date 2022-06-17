@@ -40,6 +40,7 @@ public class Movement_Mech : MonoBehaviour
     public bool flying; //boolean player is flying (dashing while not grounded)
     public bool dashed; //boolean player has dashed
     public bool noleggies = true; //boolean player just got leggies
+    public bool noWings = true; //boolean player just got leggies
     public bool jumpWinding;
     public Sprite hasleggies;
     public int side = 1; //1 is right, -1 left 
@@ -103,6 +104,11 @@ public class Movement_Mech : MonoBehaviour
             //sr.sprite = hasleggies;
             noleggies = false;
 
+        }
+        if (coll.redbull && noWings)
+        {
+            anim.SetTrigger("redbull");
+            noWings = false; 
         }
         //Debug.Log(noleggies);
         

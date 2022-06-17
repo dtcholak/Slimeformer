@@ -18,6 +18,7 @@ public class Collision_Mech : MonoBehaviour
     public bool onLeftWall;
     public bool onCeiling;
     public bool hasleggies;
+    public bool redbull;
     public int wallSide;
 
     [Space]
@@ -110,9 +111,16 @@ public class Collision_Mech : MonoBehaviour
     {
         if(collision.tag == "Powerup")
         {
-            hasleggies = true; //allows jumping in movement script
+            
             Destroy(collision.gameObject);
+            hasleggies = true; //allows jumping in movement script
             //Debug.Log("got leggies"); //what happens when colliding with powerup
+        }
+        if(collision.tag == "Powerup2")
+        {
+            Destroy(collision.gameObject);
+            redbull = true; //allows jumping in movement script
+            //Debug.Log("redbull gives you wings"); //what happens when colliding with powerup
         }
 
     }
