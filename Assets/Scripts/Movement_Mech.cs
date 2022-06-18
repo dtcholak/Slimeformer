@@ -140,7 +140,7 @@ public class Movement_Mech : MonoBehaviour
             anim.SetTrigger("flying");
             rb.velocity += Vector2.up * Physics2D.gravity.y * (flyingMultiplier - 1) * Time.deltaTime;
         }
-        if (Input.GetButtonDown("Fire3") && !isDashing)   //if left shift button is pressed
+        if (Input.GetButtonDown("Fire3") && !isDashing && coll.redbull)   //if left shift button is pressed
         {
             Dash(dash_x,dash_y);    //dash at dashspeed and add linear drag after a delay
             dashed = true;
