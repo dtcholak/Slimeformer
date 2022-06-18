@@ -703,7 +703,7 @@ MonoBehaviour:
   MinJumpHeight: 1.2
   TimetoJumpApex: 0.5
   TimetoJumpDrop: 0.5
-  dashSpeed: 15
+  dashSpeed: 5
   dashdrag: 50
   groundTouch: 0
   jumped: 0

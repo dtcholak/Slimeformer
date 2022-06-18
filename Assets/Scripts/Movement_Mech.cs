@@ -117,6 +117,7 @@ public class Movement_Mech : MonoBehaviour
         if (!flying)
         {
             //wings.SetActive(false);
+            anim.ResetTrigger("flying");
         }
         if (dashed)
         {
@@ -136,6 +137,7 @@ public class Movement_Mech : MonoBehaviour
         {
             //Physics2D.gravity = Vector2.up * -0.5f;
             //wings.SetActive(true);
+            anim.SetTrigger("flying");
             rb.velocity += Vector2.up * Physics2D.gravity.y * (flyingMultiplier - 1) * Time.deltaTime;
         }
         if (Input.GetButtonDown("Fire3") && !isDashing)   //if left shift button is pressed
