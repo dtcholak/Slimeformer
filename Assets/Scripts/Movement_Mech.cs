@@ -142,7 +142,7 @@ public class Movement_Mech : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire3") && !isDashing && coll.redbull)   //if left shift button is pressed
         {
-            Dash(dash_x,dash_y);    //dash at dashspeed and add linear drag after a delay
+            Dash(side,dash_y);    //dash at dashspeed and add linear drag after a delay
             dashed = true;
             
         }
@@ -281,12 +281,12 @@ public class Movement_Mech : MonoBehaviour
             speed = 0; // set speed to 0 
             return;
         }
-        if(jumpWinding)
-        {
-            rb.velocity = new Vector2(0, rb.velocity.y); //set x velocity to 0 
-            speed = 0; // set speed to 0 
-            return;
-        }
+        //if(jumpWinding)
+     //   {
+            //rb.velocity = new Vector2(0, rb.velocity.y); //set x velocity to 0 
+           // speed = 0; // set speed to 0 
+           // return;
+       // }
         if(dir.x != 0 && abs_speed <= 10) //if either right or left input (any x direction input)
         {
         speed += dir.x*acceleration*Time.deltaTime; //increment speed by acceleration constant
@@ -330,8 +330,8 @@ public class Movement_Mech : MonoBehaviour
         //anim.SetTrigger("dash");
 
         //rb.velocity = Vector2.zero; //set rigid body velocity to a zero vector
-        Vector2 dash_dir = new Vector2(x, y); //get the input directions and assign them as current
-        rb.velocity += dash_dir.normalized * dashSpeed; //make the velocities of magnitude one and multiply by the set dash speed 
+        Vector2 dash_dir = new Vector2(80*x, 30); //get the input directions and assign them as current
+        rb.velocity = dash_dir.normalized * dashSpeed; //make the velocities of magnitude one and multiply by the set dash speed 
         StartCoroutine(DashDrag(dash_dir));
 
      
@@ -350,7 +350,7 @@ public class Movement_Mech : MonoBehaviour
     IEnumerator JumpWindup(float initialJumpVelocity_max)
     {
         jumpWinding = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
         Jump(initialJumpVelocity_max); //jump at the speed of initial jump velocity max
     }
 }

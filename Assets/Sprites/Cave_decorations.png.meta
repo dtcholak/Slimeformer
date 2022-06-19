@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -352,6 +353,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cave_decorations_8: -7303227980412297319
+      Cave_decorations_0: -5754105872773228461
+      Cave_decorations_5: -5747746532342175008
+      Cave_decorations_4: 4424802398878447822
+      Cave_decorations_3: 5147370528749489143
+      Cave_decorations_6: -6600495354307158302
+      Cave_decorations_9: 4147951710781481269
+      Cave_decorations_2: 5522415821646760009
+      Cave_decorations_1: -2244708013635617644
+      Cave_decorations_7: -5830649553901689948
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
