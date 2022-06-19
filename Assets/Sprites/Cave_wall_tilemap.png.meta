@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1072,6 +1073,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cave_wall_tilemap_39: -8976324094968321277
+      Cave_wall_tilemap_3: -1352019406441738234
+      Cave_wall_tilemap_27: 4036130562769112509
+      Cave_wall_tilemap_22: -65652716270879120
+      Cave_wall_tilemap_28: 5556042352355433911
+      Cave_wall_tilemap_11: -1083987620841299655
+      Cave_wall_tilemap_12: 6746578579388172594
+      Cave_wall_tilemap_19: 7150811146295929065
+      Cave_wall_tilemap_5: 1937935833749221395
+      Cave_wall_tilemap_20: -5488423104640684725
+      Cave_wall_tilemap_2: -5928499508815901343
+      Cave_wall_tilemap_26: -5765872112393337898
+      Cave_wall_tilemap_17: 4379132924353648512
+      Cave_wall_tilemap_1: -8095651013904059465
+      Cave_wall_tilemap_18: -716618315549259770
+      Cave_wall_tilemap_33: 4555411584457435045
+      Cave_wall_tilemap_0: -5021501821967974839
+      Cave_wall_tilemap_4: 2849521390406217751
+      Cave_wall_tilemap_35: -999530682810336298
+      Cave_wall_tilemap_16: -82512437489233171
+      Cave_wall_tilemap_34: -6586755265751772478
+      Cave_wall_tilemap_31: 2112682715532491174
+      Cave_wall_tilemap_23: 2215006615529918577
+      Cave_wall_tilemap_13: -7514244892009860600
+      Cave_wall_tilemap_15: 2889889720142507815
+      Cave_wall_tilemap_9: 6814943619478859530
+      Cave_wall_tilemap_10: -3287807782432519890
+      Cave_wall_tilemap_21: 578530035282335230
+      Cave_wall_tilemap_29: -8436824820592362166
+      Cave_wall_tilemap_32: -6879417194684165066
+      Cave_wall_tilemap_7: -6351959960593217569
+      Cave_wall_tilemap_6: -6830235527093755635
+      Cave_wall_tilemap_38: 8092625084821250408
+      Cave_wall_tilemap_14: -8625574590281354011
+      Cave_wall_tilemap_36: -284692161882670609
+      Cave_wall_tilemap_8: -5397760098316653189
+      Cave_wall_tilemap_25: 9217603247793271839
+      Cave_wall_tilemap_37: 357255630728222766
+      Cave_wall_tilemap_24: 3729426489803634932
+      Cave_wall_tilemap_30: 8572458933782778258
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
